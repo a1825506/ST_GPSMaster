@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+   <!--  <include layout="@layout/fragment_basesubmenu"/> -->
+    
+    <TextView 
+        android:id="@+id/euqipenstatusText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="暂无数据,请先追踪设备......"
+        android:background="#FFF"/>
+    
+</LinearLayout>

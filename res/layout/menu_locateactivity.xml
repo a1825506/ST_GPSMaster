@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="地址定位"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- <EditText
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="北京" />
+
+        <EditText
+            android:id="@+id/geocodekey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="海淀区上地十街10号" /> -->
+          
+        <AutoCompleteTextView
+            android:id="@+id/keyWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="1.0dip"
+            android:hint="请输入关键字"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="20"
+            android:paddingRight="37.0dip"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="16.0sp" />
+
+      <EditText 
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5.0dip"
+            android:hint="请输入城市"
+            android:text="北京"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="16.0sp"/>
+
+        <Button
+            android:id="@+id/geocode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:onClick="SearchButtonProcess"
+            android:text="地址" />
+    </LinearLayout>
+     <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="经纬度定位"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="39.904965" />
+
+        <EditText
+            android:id="@+id/lon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="116.327764" />
+
+        <Button
+            android:id="@+id/reversegeocode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:onClick="SearchButtonProcess"
+            android:text="坐标" />
+    </LinearLayout>
+ </LinearLayout>
+   <!--  <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView_locate"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" /> -->

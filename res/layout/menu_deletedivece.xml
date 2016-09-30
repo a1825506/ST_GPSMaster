@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/delete_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="确定删除该设备？"
+        android:textColor="@color/blue"
+        android:textSize="25sp" />
+    <RelativeLayout
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       >
+     <View
+            android:id="@+id/lan_view_line0"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/Dialog_divice_imei"
+            android:background="@color/DrakGrey" />
+
+      <Button
+            android:id="@+id/delete_dialog_set_ok"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lan_view_line0"
+            android:gravity="center"
+            android:text="@string/dialog_ButtonOK"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+
+          <View
+            android:id="@+id/login_view_line1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/base_dialog_set_ok"
+            android:layout_alignTop="@+id/base_dialog_set_ok"
+            android:layout_toRightOf="@+id/base_dialog_set_ok"
+            android:background="@color/DrakGrey" />
+
+        <Button
+            android:id="@+id/delete_dialog_set_cancel"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lan_view_line0"
+            android:gravity="center"
+            android:text="@string/dialog_ButtonCancel"
+            android:textColor="@color/blue"
+            android:textSize="18sp" /> 
+            </RelativeLayout>
+
+</LinearLayout>

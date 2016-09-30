@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RadioGroup 
+        android:id="@+id/mRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/EquipmentListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_submenu_bg"
+            android:button="@null"
+            android:text="设备列表"/>
+        
+        <RadioButton 
+            android:id="@+id/TargetStateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" 
+            android:background="@drawable/button_submenu_bg"
+            android:button="@null"
+            android:text="添加设备"/>
+    </RadioGroup>
+</LinearLayout>

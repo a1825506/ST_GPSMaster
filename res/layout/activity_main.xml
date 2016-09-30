@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainactivity"
+    tools:context="com.saiteng.st_master.MainActivity" >
+ 	<LinearLayout 
+	    android:id="@+id/mlin"
+	    android:layout_width="200dp"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/menu_background"
+	    android:orientation="vertical"
+	    android:layout_alignParentStart="true"
+    	>
+	</LinearLayout>
+ 
+	<!-- 高德Map -->
+	<com.amap.api.maps.MapView
+	    android:id="@+id/map"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toEndOf="@id/mlin"> 
+	    
+	</com.amap.api.maps.MapView>
+	<CheckBox 
+		android:id="@+id/zoomButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:button="@null"
+		android:layout_alignParentEnd="true"
+		android:background="@drawable/zoom_button_bg"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="60dp"
+		android:checked="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginEnd="15dp"
+	/>
+</RelativeLayout>

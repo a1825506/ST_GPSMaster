@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">综合定位</string>
+    <string name="mainactivity_name">GPS综合定位</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_infoVersion">上海赛腾信息技术有限公司</string>
+    <string name="version_name">当前版本：</string>
+    <string name="can_not_find_version_name">获取版本号失败！</string>
+    
+    <string name="username">用户名:</string>
+    <string name="password">密码:</string>
+    <string name="old_pwd">旧密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="confirm_pwd">请确认</string>
+    <string name="confirm_change">确认修改</string>
+    <string name="remember_pwd">记住密码</string>
+    <string name="genzong_zuyuan">组员（下拉可刷新）</string>
+    <string name="genzong">跟踪</string>
+    <string name="actionbar_title">GPS综合定位系统</string>
+    <string name="menu_manage">设备管理（下拉可刷新）</string>
+    <string name="menu">跟踪业务</string>
+    <string name="track_manage">长按查看轨迹文件</string>
+    
+    <string name="genzong_track">追踪</string>
+      <string name="navigation">导航</string>
+    <string name="track_clean">清除轨迹</string>
+    <string name="track_export">导出轨迹</string>
+    <string name="about_divice">关于</string>
+    <string name="add_divice">添加设备</string>
+    <string name="delete_divice">删除设备</string>
+    <string name="shock_divice">振动</string>
+    <string name="model_divice">模式</string>
+    <string name="holdon_divice">待机</string>
+    <string name="param_divice">上传</string>
+    <string name="guiji_divice">轨迹</string>
+      
+    <string name="dialog_adddivice">添加设备</string>
+    <string name="dialog_divicename">设备名称</string>
+    <string name="dialog_divicenum">设备号码</string>
+     <string name="dialog_diviceIMEI">设备IMEI号</string>
+    <string name="dialog_divicetype">设备类型</string>
+    <string name="dialog_xinbiao">前置信标</string>
+    <string name="dialog_danbing">单兵终端</string>
+    <string name="dialog_ButtonOK">确定</string>
+    <string name="dialog_ButtonCancel">取消</string>
+    
+     <string name="serverip">服务器地址</string>
+    <string name="serverport">服务器端口</string>
+    <string name="login">登录</string>
+    <string name="remember_password">记住地址</string>
+    
+    <string name="app_id">输入您讯飞的appid</string>
+     <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_title_tts_speed">语速</string>
+    <string name="preference_default_tts_speed">50</string>
+    <string name="preference_dialog_title_tts_speed">选择语速</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_title_tts_volume">音量</string>
+    <string name="preference_default_tts_volume">50</string>
+    <string name="preference_dialog_title_tts_volume">选择音量</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="preference_title_tts_pitch">语调</string>
+    <string name="preference_default_tts_pitch">50</string>
+    <string name="intell_bd_title">智能播报</string>
+    
+    <string name="all_offline">所有城市</string>
+    <string name="download_offline">下载管理</string>
+    <string name="offlinemap_demo">离线地图功能</string>
+</resources>

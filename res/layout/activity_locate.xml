@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/action_bar_preview"/>
+    <TextView
+         android:id="@+id/diviceinfo"
+         android:layout_width="match_parent"
+         android:layout_height="75dp"
+         android:background="@color/transparent"
+         android:textColor="@color/black"
+         android:text="信息"
+        />
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        >
+    <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+   <!--  <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/self_map"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/divice_map"
+        /> -->
+        </RelativeLayout>
+
+</LinearLayout>

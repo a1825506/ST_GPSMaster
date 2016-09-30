@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:orientation="vertical" >
+    
+  <include layout="@layout/menu_manage_previewback" />
+
+  <com.jingchen.pulltorefresh.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_weight="3"
+    android:layout_height="wrap_content" >
+
+     <include layout="@layout/refresh_head" />
+    <!-- 支持所有实现Pullable接口的View -->
+
+    <com.jingchen.pulltorefresh.pullableview.PullableListView
+        android:id="@+id/genzong_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp" />
+
+
+</com.jingchen.pulltorefresh.PullToRefreshLayout>
+     
+      <LinearLayout
+        android:id="@+id/genzong_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0"
+        >
+    </LinearLayout> 
+     
+</LinearLayout>

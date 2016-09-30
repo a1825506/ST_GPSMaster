@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#474747"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    	<TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传间隔:"/>
+        <Spinner 
+            android:id="@+id/setting_param"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/param_send"
+            />
+    </LinearLayout>
+    
+   <RadioGroup android:id="@+id/vibrationGroup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="振动:" />
+          
+        <RadioButton android:id="@+id/vibrationon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启"
+            />
+        <RadioButton android:id="@+id/vibrationoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"/>
+   </RadioGroup>
+   
+   <RadioGroup android:id="@+id/standbyGroup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+        <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="待机:" />
+          
+        <RadioButton android:id="@+id/standbyon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启"
+            />
+        <RadioButton android:id="@+id/standbyoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"/>
+   </RadioGroup>
+   
+   <RadioGroup android:id="@+id/GPSGroup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="GPS:" />
+          
+        <RadioButton android:id="@+id/GPSon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启"
+            />
+        <RadioButton android:id="@+id/GPSoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"/>
+   </RadioGroup>
+   
+   <RadioGroup android:id="@+id/WIFIGroup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="WIFI:" />
+          
+        <RadioButton android:id="@+id/WIFIon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启"
+            />
+        <RadioButton android:id="@+id/WIFIoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"/>
+   </RadioGroup>
+   
+	<Button 
+	     android:id="@+id/parameterButton"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_gravity="center"
+	     android:text="确定"/>
+	 
+</LinearLayout>
